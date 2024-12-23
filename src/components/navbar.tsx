@@ -41,8 +41,6 @@ export const Navbar = () => {
                   })}
                 >
                   Pricing
-
-                  
                 </Link>
                 <Link
                   href="/sign-in"
@@ -52,9 +50,7 @@ export const Navbar = () => {
                   })}
                 >
                   Sign In
-                  <div className="h-8 w-px bg-gray-500"/>
-
-
+                  <div className="h-8 w-px bg-gray-500" />
                 </Link>
                 <Link
                   href="/sign-up"
