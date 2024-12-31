@@ -10,7 +10,7 @@ export const Navbar = () => {
       <MaxWidthWrapper>
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex z-40 font-semibold">
-            Ping <span className="text-brand-700">Panda</span>
+          Saa <span className="text-brand-700">Scord</span>
           </Link>
           <div className="h-full flex items-center space-x-4">
             {user ? (

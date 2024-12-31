@@ -5,6 +5,7 @@ import { ShinyButton } from "../../components/shiny-button"
 import { MockDiscordUI } from "@/components/mock-discord-ui"
 import { AnimatedList } from "@/components/ui/animated-list"
 import { DiscordMessage } from "@/components/discord-message"
+import Image from "next/image"
 
 const Page = () => {
   return (
@@ -22,7 +23,7 @@ const Page = () => {
               </Heading>
             </div>
             <p className="text-bare/7 text-gray-600 max-w-prose text-center text-pretty">
-              PingPanda is the easiest way to monitor your Saas. Get instant
+              SaaScord is the easiest way to monitor your Saas. Get instant
               notification{" "}
               <span className="font-semibold text-gray-700">
                 Sales, new Users, or any other events
@@ -62,7 +63,7 @@ const Page = () => {
                   <DiscordMessage
                     avatarSrc="/brand-asset-profile-picture.png"
                     avatarAlt="PingPanda"
-                    username="PingPanda"
+                    username="SaaScord"
                     timestamp="Today at 12:00"
                     badgeText="SignUp"
                     badgeColor="#43b581"
@@ -75,7 +76,7 @@ const Page = () => {
                   <DiscordMessage
                     avatarSrc="/brand-asset-profile-picture.png"
                     avatarAlt="PingPanda"
-                    username="PingPanda"
+                    username="SaaScord"
                     timestamp="Today at 12:00"
                     badgeText="SignUp"
                     badgeColor="#43b581"
@@ -91,7 +92,48 @@ const Page = () => {
           </MaxWidthWrapper>
         </div>
       </section>
-      <section></section>
+      <section className="relative py-24 sm:py-32 bg-brand-25">
+        <MaxWidthWrapper className="flex flex-col items-center gap-16 sma:gap-20">
+          <div>
+            <h2 className="text-center text-base/7 font semi-bold sm:gap-28">
+              Intuitive Monitoring
+            </h2>
+          </div>
+          <Heading>Stay Ahead With Real Time Insights</Heading>
+          <div className="grid gap-4 lg:grid-cols-3 lg:grid-rows-2">
+            {/* FIRST BENTO GRID*/}
+            <div className="relative lg:row-span-2">
+              <div className="absolute inset-px rounded-lg bg-white lg:rounded-l-2[2rem]" />
+              <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg : rounded-l-[calc(2rem+1px)]">
+                <div className="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
+                  <p className="mt-2 text-lg/7 font-medium tracking-tight text-brand-950 max-lg:text-center">
+                    Real Time Notifications
+                  </p>
+                  <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                    Get instant notification on your discord for critical events
+                    like new users, sales, or any other custom events
+                  </p>
+                </div>
+                <div className="relative min-h-[30rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
+                  <div className="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cwq] border-gray-700 bg-gray-gray-900 shadow-2xl">
+                    <Image
+                      className="size-full object-cover object-top"
+                      src="/phone-screen.png"
+                      alt="Phone Screen App Interface"
+                      fill
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 lg:rounded-l-[rem" />
+            </div>
+            {/* SECOND BENTO GRID */}
+            <div></div>
+          </div>
+        </MaxWidthWrapper>
+        <div className="grid gap-3"></div>
+      </section>
+
       <section></section>
       <section></section>
     </>

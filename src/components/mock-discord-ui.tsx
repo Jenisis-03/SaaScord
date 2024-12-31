@@ -72,7 +72,7 @@ export const MockDiscordUI = ({ children }: PropsWithChildren) => {
                 height={32}
                 className="object-cover rounded-full mr-3"
               />
-              <span className="font-medium">PingPanda</span>
+              <span className="font-medium">SaaScord</span>
             </div>
             <div className="my-1 space-y-px">
               {[...Array(4)].map((_, i) => (
@@ -120,7 +120,7 @@ export const MockDiscordUI = ({ children }: PropsWithChildren) => {
               />
               <div className="absolute bottom-0 right-3 size-3 bg-green-600 rounded-full border-2 border-[#]"></div>
             </div>
-            <p className="font-semibold text-white">PingPanda</p>
+            <p className="font-semibold text-white">SaaScord</p>
           </div>
           <div className="ml-auto flex items-center space-x-4 text-[#b9bbbe]">
             <Phone className="size-5 hover:text-white cursor-not-allowed hidden sm:block" />
@@ -142,7 +142,7 @@ export const MockDiscordUI = ({ children }: PropsWithChildren) => {
             <input
               readOnly
               type="text"
-              placeholder="Message@PingPanda"
+              placeholder="Message@SaaScord"
               className="flex-1 bg-transparent py-2.5 px-1 text-white placeholder-[#72767d] focus:outline-none cursor-not-allowed"
             />
             <div className="flex items-center space-x-3 mx-3 text-[#b9bbbe] ">
